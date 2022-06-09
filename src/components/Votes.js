@@ -10,11 +10,10 @@ function Votes({ upVotes, downVotes }) {
     
     
     function handleDownVotesClick(event) {
-        setDownVotesDisplay(downVotesDisplay - 1);
+        setDownVotesDisplay(downVotesDisplay === 0 ? 0 : downVotesDisplay - 1);
     }
 
 
-    console.log(upVotes, downVotes);
     return (
         <div className="votes-container">
             <button onClick={handleUpVotesClick}>

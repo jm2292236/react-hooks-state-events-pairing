@@ -22,8 +22,8 @@ function CommentList( { comments }) {
                             key={comment.id} 
                             user={comment.user} 
                             comment={comment.comment}
-                            commentUpVotes={comment.upVotes}
-                            commentDownVotes={comment.downVotes}
+                            commentUpVotes={comment.upvotes}
+                            commentDownVotes={comment.downvotes}
                         />
                     )
                 })
